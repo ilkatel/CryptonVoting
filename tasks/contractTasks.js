@@ -182,7 +182,7 @@ task("getCandidates", "Returns candidates by voting")
         console.log(result)
 })
 
-// npx hardhat getCandidate --index 1 --name name1
+// npx hardhat getCandidate --index 1 --name сName1
 task("getCandidate", "Returns candidate by voting")
     .addParam("index", "The index of voting")
     .addParam("name", "The string or bytes candidate name")

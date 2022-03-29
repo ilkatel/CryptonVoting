@@ -2,7 +2,7 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\Acer\\Desktop\\Crypton\\contracts\\Voting.sol": {
-      "lastModificationDate": 1648587555963,
+      "lastModificationDate": 1648588755920,
       "contentHash": "c1fd2e3646cda1e5d3be7241c9c85506",
       "sourceName": "contracts/Voting.sol",
       "solcConfig": {
@@ -25,6 +25,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
