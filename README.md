@@ -24,24 +24,24 @@
 
 >___В контракте имеется функция завершения голосования___
 
-\> [function finishVote](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L167)
+\> [function finishVote](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L167) <br>
 \> Помимо этого, госолование будет автоматически завершено функцией [checkFinishVoting](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L147) при попытке в нем поучаствовать по истечению времени.
 
 >___В контракте имеется дополнительныу view функции для вывода информации о голосовании и участниках___
 
-\> [function getCandidate](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L99) вернет данные о конкретном участнике в указанном голосовании;
-\> [function getVotingCandidates](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L103) вернет данные о всех участниках в указанном голосовании;
-\> [function getWinners](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L143) вернет адреса участников лидирующих в текущий момент или победивших в указанном голосовании;
-\> [function getBalance](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L171) вернет баланс контракта;
-\> [function getFreeBalance](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L175) вернет баланс контракта, который доступен для вывода владельцу;
-\> [function currentTime](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L77) вернет текущее время блока в Unix формате;
+\> [function getCandidate](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L99) вернет данные о конкретном участнике в указанном голосовании; <br>
+\> [function getVotingCandidates](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L103) вернет данные о всех участниках в указанном голосовании; <br>
+\> [function getWinners](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L143) вернет адреса участников лидирующих в текущий момент или победивших в указанном голосовании; <br>
+\> [function getBalance](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L171) вернет баланс контракта; <br>
+\> [function getFreeBalance](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L175) вернет баланс контракта, который доступен для вывода владельцу; <br>
+\> [function currentTime](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L77) вернет текущее время блока в Unix формате; <br>
 \> [function getTimeLeft](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L179) вернет оставшееся время указанного голосования в Unix формате.
 
 > ___В проекте утсановлен solidity-coverage и имеются тесты, обеспечивающие полное покрытие по всем показателям___
 
-\> Все тесты располагаются в папке [test](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/test/contractTest.js#L4);
-\> Для удобства тесты запускаются в сети hardhat с помощью [скрипта](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/package.json#L8);
-\> Реализовано полное покрытие;
+\> Все тесты располагаются в папке [test](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/test/contractTest.js#L4); <br>
+\> Для удобства тесты запускаются в сети hardhat с помощью [скрипта](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/package.json#L8); <br>
+\> Реализовано полное покрытие; <br>
 \* Последние тесты показывают большое время выполнения из-за функции засыпания, реализованной для возможности завершения голосования по истечению его времени.
 
 \> ![Покрытие тестов](images/coverage.jpg)
@@ -52,21 +52,21 @@
 
 > ___В папке tasks имеются hardhat task`и, позволяющие взаимодействовать с опубликованным контрактом___
 
-\> Для примера [все task'и](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/tasks/contractTasks.js#L1) выполняются от лица владельца контракта.
+\> Для примера [все task'и](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/tasks/contractTasks.js#L1) выполняются от лица владельца контракта. <br>
 \> Рассмотрим несколько примеров
-* Добавление голосования:
-[Полноценный вариант](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/tasks/contractTasks.js#L138)
-[Упрощенный вариант для тестов](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/tasks/contractTasks.js#L162)
+* Добавление голосования:<br>
+[Полноценный вариант](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/tasks/contractTasks.js#L138)<br>
+[Упрощенный вариант для тестов](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/tasks/contractTasks.js#L162)<br>
 ![Добавление голосования](images/task_addVote.jpg)
 
-* [Участие в голосовании](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/tasks/contractTasks.js#L208):
+* [Участие в голосовании](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/tasks/contractTasks.js#L208):<br>
 ![Участие в голосовании](images/task_vote.jpg)
 
-* [Завершение голосования](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/tasks/contractTasks.js#L225):
-Пример откаченной транзакции (голосование еще идет)
+* [Завершение голосования](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/tasks/contractTasks.js#L225):<br>
+Пример откаченной транзакции (голосование еще идет)<br>
 ![Завершение голосования](images/task_finish.jpg)
 
-* [Получение списка участников](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/tasks/contractTasks.js#L176):
+* [Получение списка участников](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/tasks/contractTasks.js#L176):<br>
 ![Получение списка участников](images/task_candidates.jpg)
 
 * [И многое другое...](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/tasks/contractTasks.js#L1)
@@ -84,7 +84,7 @@
 
 ---
 
-Текущий адрес развернутого контракта [0x91E18084a48dE79C9C1Af509E97F5997161c3c2C](https://rinkeby.etherscan.io/address/0x91E18084a48dE79C9C1Af509E97F5997161c3c2C)
-Автор <span style="color: red">ilkatel</span>
+Текущий адрес развернутого контракта [0x91E18084a48dE79C9C1Af509E97F5997161c3c2C](https://rinkeby.etherscan.io/address/0x91E18084a48dE79C9C1Af509E97F5997161c3c2C)<br>
+Автор <span style="color: red">ilkatel</span><br>
 
 $ echo \\"bye.\\"
