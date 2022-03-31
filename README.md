@@ -25,7 +25,7 @@
 >___В контракте имеется функция завершения голосования___
 
 \> [function finishVote](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L167) <br>
-\> Помимо этого, госолование будет автоматически завершено функцией [checkFinishVoting](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L147) при попытке в нем поучаствовать по истечению времени.
+\> Данная функция вызывает [checkFinishVoting](https://github.com/ilkatel/CryptonVoting/blob/d8e84f1d8f62fdcc5c57d203751e0ddf98bcce6d/contracts/Voting.sol#L147), которая завершит голосование или не даст в нем поучаствовать по истечению времени.
 
 >___В контракте имеется дополнительныу view функции для вывода информации о голосовании и участниках___
 
